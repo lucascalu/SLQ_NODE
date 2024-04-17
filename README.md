@@ -33,3 +33,18 @@ No terminal, navegue até o diretório onde você salvou o arquivo app.js e exec
 node app.js
 
 </PRE>
+
+<PRE>
+
+    // Suponha que você tenha uma variável chamada 'tableName' que contém o nome da tabela
+const tableName = 'users';
+// Suponha que você tenha uma variável chamada 'column' que contém o nome da coluna
+const column = 'username';
+
+// Construindo a query dinamicamente
+const query = `SELECT ${column} FROM ${tableName} WHERE condition = 'some_condition';`;
+
+// Em seguida, você pode usar essa query onde precisar
+console.log(query);
+
+</PRE>
